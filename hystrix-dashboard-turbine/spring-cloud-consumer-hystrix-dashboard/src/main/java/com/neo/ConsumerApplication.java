@@ -11,8 +11,8 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-@EnableHystrixDashboard
-@EnableCircuitBreaker
+@EnableHystrixDashboard //启用Hystrix Dashboard
+@EnableCircuitBreaker //启用熔断器
 public class ConsumerApplication {
 
 	public static void main(String[] args) {

@@ -7,11 +7,11 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 @SpringBootApplication
 @EnableHystrixDashboard
-@EnableTurbine
+@EnableTurbine //激活对Turbine的支持
 public class DashboardApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DashboardApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DashboardApplication.class, args);
+    }
 
 }
