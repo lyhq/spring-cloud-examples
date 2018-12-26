@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * Created by summer on 2017/5/11.
  */
-@FeignClient(name= "spring-cloud-producer")
+@FeignClient(name= "spring-cloud-producer") //name:远程服务名，及spring.application.name配置的名称
 public interface HelloRemote {
 
+    //此类中的方法和远程服务中contoller中的方法名和参数需保持一致。
     @RequestMapping(value = "/hello")
-    public String hello(@RequestParam(value = "name") String name);
-
+    String hello(@RequestParam(value = "name") String name);
 
 }
