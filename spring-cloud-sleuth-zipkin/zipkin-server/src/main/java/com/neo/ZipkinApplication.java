@@ -7,7 +7,7 @@ import zipkin.server.EnableZipkinServer;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableZipkinServer
+@EnableZipkinServer //启用Zipkin服务。
 public class ZipkinApplication {
 
 	public static void main(String[] args) {

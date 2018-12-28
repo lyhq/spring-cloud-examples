@@ -4,10 +4,10 @@ spring:
   application:
     name: zuul
   zipkin:
-    base-url: http://localhost:9000
+    base-url: http://localhost:9000 #指定Zipkin服务器的地址
   sleuth:
     sampler:
-      percentage: 1.0
+      percentage: 1.0 #表示全部都需要(全部采集)
 eureka:
   client:
     serviceUrl:
